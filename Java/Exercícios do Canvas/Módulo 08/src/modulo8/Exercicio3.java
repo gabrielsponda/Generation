@@ -2,7 +2,7 @@ package modulo8;
 
 import java.util.Scanner;
 
-public class Atividade3 {
+public class Exercicio3 {
 	
 	static Scanner leia = new Scanner(System.in);
 
