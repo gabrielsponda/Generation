@@ -1,4 +1,4 @@
-package modulo11;
+package modulo11.arrays;
 
 import java.util.Scanner;
 
