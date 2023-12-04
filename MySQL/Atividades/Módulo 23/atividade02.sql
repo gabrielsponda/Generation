@@ -21,7 +21,7 @@ VALUES
 
 INSERT INTO tb_produtos(nome, preco, quantidade)
 VALUES
-("Lapisseira", 1.00, 15),
+("Lapiseira", 1.00, 15),
 ("Caneta", 1.75, 23);
 
 SELECT nome, preco FROM tb_produtos WHERE preco > 500;
