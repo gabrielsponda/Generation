@@ -3,7 +3,7 @@ CREATE DATABASE db_rh;
 USE db_rh;
 
 CREATE TABLE tb_colaboradores (
-	id BIGINT AUTO_INCREMENT,
+    id BIGINT AUTO_INCREMENT,
     nome VARCHAR(255) NOT NULL,
     cargo VARCHAR(255),
     data_inicio DATE,
