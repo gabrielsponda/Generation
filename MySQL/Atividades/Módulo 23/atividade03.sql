@@ -3,7 +3,7 @@ CREATE DATABASE db_escola;
 USE db_escola;
 
 CREATE TABLE tb_alunos (
-	id BIGINT AUTO_INCREMENT,
+    id BIGINT AUTO_INCREMENT,
     nome VARCHAR(255) NOT NULL,
     nascimento DATE,
     turma VARCHAR(255),
