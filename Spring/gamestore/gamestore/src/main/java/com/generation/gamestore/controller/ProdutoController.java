@@ -49,17 +49,17 @@ public class ProdutoController {
 	
 	@GetMapping("/nome/{nome}")
 	public ResponseEntity<List<Produto>> getByTitulo(@PathVariable String nome) {
-		return ResponseEntity.ok(produtoRepository.findAllByNomeContainingIgnoreCase(nome));
+		return ResponseEntity.ok(produtoRepository.findByNomeContainingIgnoreCase(nome));
 	}
 	
 	@GetMapping("/precosmenores/{preco}")
 	public ResponseEntity<List<Produto>> getByPrecoMenor(@PathVariable BigDecimal preco) {
-		return ResponseEntity.ok(produtoRepository.findAllByPrecoLessThan(preco));
+		return ResponseEntity.ok(produtoRepository.findByPrecoLessThan(preco));
 	}
 	
 	@GetMapping("/precosmaiores/{preco}")
 	public ResponseEntity<List<Produto>> getByPrecoMaior(@PathVariable BigDecimal preco) {
-		return ResponseEntity.ok(produtoRepository.findAllByPrecoGreaterThan(preco));
+		return ResponseEntity.ok(produtoRepository.findByPrecoGreaterThan(preco));
 	}
 	
 	@PostMapping

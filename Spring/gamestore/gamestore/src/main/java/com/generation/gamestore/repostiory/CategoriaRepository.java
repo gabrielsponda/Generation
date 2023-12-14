@@ -9,5 +9,5 @@ import com.generation.gamestore.model.Categoria;
 
 public interface CategoriaRepository extends JpaRepository<Categoria, Long> {
 
-	public List<Categoria> findAllByNomeContainingIgnoreCase(@Param("nome") String nome); // SELECT * FROM tb_categorias WHERE nome LIKE %?1%
+	public List<Categoria> findByNomeContainingIgnoreCase(@Param("nome") String nome); // SELECT * FROM tb_categorias WHERE nome LIKE %?1%
 }
