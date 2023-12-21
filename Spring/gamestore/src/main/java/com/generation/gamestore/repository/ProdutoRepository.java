@@ -1,4 +1,4 @@
-package com.generation.gamestore.repostiory;
+package com.generation.gamestore.repository;
 
 import java.math.BigDecimal;
 import java.util.List;

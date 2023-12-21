@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
 import com.generation.gamestore.model.Categoria;
-import com.generation.gamestore.repostiory.CategoriaRepository;
+import com.generation.gamestore.repository.CategoriaRepository;
 
 import jakarta.validation.Valid;
 
