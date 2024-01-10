@@ -1,0 +1,109 @@
+/* Estilize o corpo da página com margens */
+body {
+    font-family: Arial;
+    background-color: #f0f0f0;
+    padding: 0;
+    margin: 20px;
+    text-align: center;
+}
+
+/* Estilo da navegação */
+ul {
+    list-style-type: none;
+    background-color: #333;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+li {
+    display: inline;
+    margin-right: 20px;
+}
+
+li:last-child {
+    margin-right: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a.active {
+    color: cyan;
+    font-weight: bold;
+}
+
+a:hover {
+    color: darkblue;
+}
+
+/* Estilo do título principal */
+h1.titulo {
+    text-align: center;
+    color: darkblue;
+    font-size: 126px;
+    font-weight: 900;
+    margin-top: 20px;
+}
+
+/* Estilo do subtítulo "Sobre Mim" */
+h2.sobreMim {
+    color: black;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Estilo do contêiner de perfil (imagem + texto) */
+.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilo do contêiner de texto e imagem */
+.texto-imagem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo do parágrafo */
+.texto-imagem p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+    margin: 10px 0;
+}
+
+/* Estilo da imagem de perfil (aumente o tamanho) */
+.texto-imagem img {
+    border: 2px solid darkblue;
+    max-width: 200px;
+    margin: 0 20px;
+}
+
+/* Estilo do título do vídeo */
+h2.videoPredileto {
+    color: black;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Estilo do vídeo */
+iframe {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    width: auto;
+    height: 100%;
+    max-height: 400px;
+}

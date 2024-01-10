@@ -1,0 +1,124 @@
+/* Estilize o corpo da página com margens */
+body {
+    font-family: Arial;
+    background-color: #f0f0f0;
+    padding: 0;
+    margin: 20px;
+    text-align: center;
+}
+
+/* Estilo da navegação */
+ul {
+    list-style-type: none;
+    background-color: #333;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+li {
+    display: inline;
+    margin-right: 20px;
+}
+
+li:last-child {
+    margin-right: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a.active {
+    color: cyan;
+    font-weight: bold;
+}
+
+a:hover {
+    color: darkblue;
+}
+
+/* Estilize o título "Entre em contato comigo!" */
+h1 {
+    font-size: 36px;
+    color: darkblue;
+    margin-top: 20px;
+}
+
+/* Estilize o contêiner principal */
+.contato {
+    display: flex;
+    flex-direction: row;
+    /* Organize lado a lado */
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* Estilize o contêiner do formulário */
+.form {
+    flex-basis: calc(50% - 10px);
+    margin-right: 10px;
+}
+
+/* Estilize os rótulos dos campos */
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Estilize os campos de entrada (nome, email, mensagem) */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilize o botão de envio */
+input[type="submit"] {
+    background-color: darkblue;
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* Estilize o título "Endereço" */
+h2 {
+    font-size: 24px;
+    color: darkblue;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Estilize o parágrafo de endereço */
+p {
+    font-size: 16px;
+    color: black;
+    margin-top: 10px;
+}
+
+/* Estilize o contêiner do mapa e endereço */
+.mapa-container {
+    flex-basis: calc(50% - 10px);
+    margin-left: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Estilize o mapa incorporado */
+iframe {
+    width: 400px;
+    height: 300px;
+    border: none;
+    margin-top: 20px;
+}

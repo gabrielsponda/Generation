@@ -5,43 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=1, initial-scale=1.0">
     <title>Contato</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/contato.css">
 </head>
 
 <body>
 
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="contato.html">Contato</a></li>
+    </ul>
+
     <h1>Entre em contato comigo!</h1>
 
-    <form action="enviar.php" method="post">
+    <div class="contato">
+        <div class="form">
+            <form action="enviar.php" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome">
+                <br><br>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email">
+                <br><br>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" cols="30" rows="5"></textarea>
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
 
-        <label for="nome">Nome:</label>
-        <br>
-        <input type="text" id="nome">
-        <br>
-        <br>
-        <label for="email">E-mail:</label>
-        <br>
-        <input type="email" id="email">
-        <br>
-        <br>
-        <label for="mensagem">Mensagem:</label>
-        <br>
-        <textarea name="mensagem" id="mensagem" cols="60" rows="5"></textarea>
+        <div class="mapa-container">
+            <div class="mapa-wrapper">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.092982796749!2d-46.65538682391403!3d-23.56510376173117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c7c6e0257f%3A0xb256f885ba9bd1cd!2sAv.%20Paulista%2C%20999%20-%20Jardins%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001311-100!5e0!3m2!1spt-BR!2sbr!4v1704844422267!5m2!1spt-BR!2sbr"
+                    width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <h2>Endereço</h2>
+            <p>
+                Av. Paulista, 999
+                <br>
+                São Paulo - SP
+            </p>
+        </div>
+    </div>
 
-        <input type="submit" value="Enviar">
-
-        <h2>Endereço</h2>
-        <p>
-            Av. Paulista, 999
-            <br>
-            São Paulo - SP
-        </p>
-
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.092982796749!2d-46.65538682391403!3d-23.56510376173117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c7c6e0257f%3A0xb256f885ba9bd1cd!2sAv.%20Paulista%2C%20999%20-%20Jardins%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001311-100!5e0!3m2!1spt-BR!2sbr!4v1704844422267!5m2!1spt-BR!2sbr"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-    </form>
 </body>
 
 </html>
