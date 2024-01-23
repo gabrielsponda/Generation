@@ -8,8 +8,8 @@ interface CardCategoriaProps {
 function CardCategoria({ categoria }: CardCategoriaProps) {
     return (
         <div className="border flex flex-col rounded-2xl overflow-hidden justify-between">
-            <header className="py-2 px-6 bg-green-950 text-white font-bold text-2xl">Categoria</header>
-            <p className="p-8 text-3xl bg-slate-200 h-full">{categoria.tipo}</p>
+            <header className="py-2 px-6 bg-black text-green-600 font-bold text-2xl">Categoria {categoria.id}</header>
+            <p className="p-8 text-3xl bg-slate-200 h-full text-center">{categoria.tipo}</p>
             <div className="flex">
                 <Link to={`/editarCategoria/${categoria.id}`} className="text-black bg-green-300 hover:bg-green-600 w-full flex items-center justify-center py-2">
                     <button>Editar</button>

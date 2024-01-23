@@ -42,19 +42,19 @@ function DeletarCategoria() {
     }
 
     return (
-        <div className="container w-1/3 mx-auto">
+        <div className="container w-1/3 mx-auto mt-24">
             <h1 className="text-4xl text-center my-4">Deletar Categoria</h1>
             <p className="text-center font-semibold mb-4">Você tem certeza de que deseja apagar a categoria a seguir?</p>
             <div className="border flex flex-col rounded-2xl overflow-hidden justify-between">
-                <header className="py-2 px-6 bg-green-600 text-black font-bold text-2xl">
+                <header className="py-2 px-6 bg-black text-green-600 font-bold text-2xl text-center">
                     Categoria
                 </header>
-                <p className="p-8 text-3xl bg-slate-200 h-full">{categoria.tipo}</p>
+                <p className="p-8 text-3xl bg-slate-200 h-full text-center">{categoria.tipo}</p>
                 <div className="flex">
                     <button className="text-slate-100 bg-red-400 hover:bg-red-600 w-full py-2" onClick={retornar}>
                         Não
                     </button>
-                    <button className="text-slate-100 bg-indigo-400 hover:bg-indigo-600 w-full py-2" onClick={deletarCategoria}>
+                    <button className="text-black bg-green-400 hover:bg-green-600 w-full py-2 flex justify-center" onClick={deletarCategoria}>
                         {isLoading ?
                             <RotatingLines
                                 strokeColor="white"

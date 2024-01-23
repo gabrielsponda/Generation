@@ -23,15 +23,18 @@ function ListarCategorias() {
     return (
         <>
             {categorias.length === 0 && (
-                <DNA
-                    visible={true}
-                    height="200"
-                    width="200"
-                    ariaLabel="dna-loading"
-                    wrapperStyle={{}}
-                    wrapperClass="dna-wrapper mx-auto"
-                />)}
-            <div className="flex justify-center w-full my-4">
+                <div className="flex justify-center items-center min-h-screen">
+                    <DNA
+                        visible={true}
+                        height="200"
+                        width="200"
+                        ariaLabel="dna-loading"
+                        wrapperStyle={{}}
+                        wrapperClass="dna-wrapper mx-auto"
+                    />
+                </div >)
+            }
+            <div className="flex justify-center w-full mt-28">
                 <div className="container flex flex-col">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <>
