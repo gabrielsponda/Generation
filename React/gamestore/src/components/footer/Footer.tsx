@@ -3,7 +3,7 @@ import { LinkedinLogo, GithubLogo } from '@phosphor-icons/react'
 function Footer() {
 
     return (
-        <div className="flex justify-center bg-black text-white">
+        <div className="flex justify-center bg-black text-white border-t-4 border-green-500">
             <div className="container flex flex-col items-center py-1">
                 <p className="text-2xl font-bold mb-2">Gabriel Sponda</p>
                 <div className="flex gap-4">
